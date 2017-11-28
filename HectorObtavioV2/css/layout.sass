@@ -1,0 +1,111 @@
+
+
+
+body
+  background-color: mint
+
+
+header
+  background-image: url(/images/Hat-Header.jpg)
+  height: 100vh
+  background-size: cover
+  margin-bottom: 50px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  box-shadow: 0px 12px 12px 0px rgba(0, 0, 0, 0.28)
+
+
+h1, h4, a
+  color: white
+  font-family: 'Josefin Sans', sans-serif
+
+hr
+  width: 80%
+  opacity: 0.4
+
+
+
+/*  ************** nav styling ************** */
+.navtop
+
+    position: fixed
+    width: 100%
+    top: 0
+    height: 8%
+    background: #333
+    background: rgba(0,0,0,0.2)
+    font-size: 1em
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    overflow: hidden
+    outline: none
+
+.navtop ul
+  list-style-type: none
+  padding-right: .5%
+  margin: 0px
+  text-align: center
+.navtop li
+  text-align: center
+  margin-top: 1%
+  float: right
+  margin-right: 5%
+.navtop a
+  color: white
+  text-decoration: none
+
+//.navtop
+  transition: 600ms transform fade-in
+  transform: scale(0)
+  transform-origin: right
+
+
+//.navtop
+  opacity: 0
+
+.navtop
+  animation: pop 200ms ease-in forwards
+
+@keyframes pop
+  0%
+    opacity: 0
+
+  100%
+    transform: scale(1)
+    opacity: 1
+
+
+
+.navbottom
+  position: fixed
+  width: 100%
+  bottom: 0
+  height: 10%
+  background: rgba(0,0,0,0.2)
+  font-size: 2em
+  overflow: hidden
+  outline: none
+.navbottom ul
+  list-style: none
+  padding: 0
+  margin: auto
+  text-align: center
+.navbottom li
+  text-align: center
+  margin-bottom: .5%
+  display: inline-block
+  margin: auto
+.navbottom a
+  color: white
+  text-decoration: none
+  font-family: 'Josefin Sans', sans-serif
+
+.content
+  text-align: center
+  width: 75%
+  margin: auto
+  font-family: 'Josefin Sans', sans-serif
